@@ -102,12 +102,18 @@ img {
 
 /*===========NAVBAR==========*/
 nav {
-    background: transparent;
+    background: var(--color-success);
     width: 100vw;
     height: 5rem;
     position: fixed;
     top: 0;
     z-index: 11;
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav__container {
@@ -198,8 +204,33 @@ header {
     z-index: 1;
 }
 
+.category:nth-child(2) .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(3) .category__icon {
+    background: var(--color-success);
+}
+
+.category:nth-child(4) .category__icon {
+    background: var(--color-warning);
+}
+
+.category:nth-child(5) .category__icon {
+    background: var(--color-success);
+}
+
 .category__icon {
     background: var(--color-primary);
     padding: 0.7rem;
     border-radius: 0.9rem;
 }
+
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+}
+
